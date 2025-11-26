@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Details</title>
+
+  <!-- CSS فائل کا درست راستہ -->
+  <link rel="stylesheet" href="../css/product.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+  <!-- ہیڈر -->
+  <header>
+       <div class="logo_container">
+        <a href="#"><img class="myntra_home" src="../images/classic-jewellery-logo.png" alt="classic-jewellery Home"></a>
+    </div>
+
+    <nav class="nav_bar">
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">Kids</a>
+        <a href="#">Beauty</a>
+        <a href="#">Studio <sup>New</sup></a>
+    </nav>
+    <div class="search_bar">
+        <span class="material-symbols-outlined search_icon">search</span>
+        <input class="search_input" placeholder="Search for products, brands and more">
+    </div>
+    <div class="action_bar">
+        <a class="action_container" href="bag.html">
+            <span class="material-symbols-outlined action_icon">shopping_bag</span>
+            <span class="action_name">Bag</span>
+            <span class="bag-items">0</span>
+        </a>
+    </div>
+
+
+
+
+    
+
+  </header>
+
+  
+ <div class="buttons-main">
+  
+
+    <div class="lang-switch-container">
+    <button class="lang-switch-btn" onclick="switchToEnglish()">English</button>
+    <button class="lang-switch-btn" onclick="switchToUrdu()">اردو</button>   
+   </div>
+
+   <!-- واپس جانے کا بٹن -->
+  <div class="back-btn-container">
+    <button onclick="goBack()" class="back-button">
+      <span class="label">BACK</span>
+    </button>
+
+  </div>
+
+
+
+   <!-- <button id="langToggleBtn" class="lang-btn">URDU</button> -->
+   </div>
+  
+
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+
+
+
+ 
+
+
+
+    <script src="items.js"></script>
+    <script src="product.js"></script>
+</body>
+</html>
+
+  <!-- پروڈکٹ کی تفصیل -->
+  <div id="productDetailContent" class="product-detail-container">
+    لوڈ ہو رہا ہے...
+  </div>
+
+  <!-- فوٹر -->
+  <footer>
+    <div class="footer_container">
+        <div class="footer_column">
+            <h3>ONLINE SHOPPING</h3>
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">Kids</a>
+            <a href="#">Beauty</a>
+            <a href="#">Gift Card</a>
+            <a href="#">Myntra Insider</a>
+        </div>
+
+        <div class="footer_column">
+            <h3>ONLINE SHOPPING</h3>
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">Kids</a>
+            <a href="#">Beauty</a>
+            <a href="#">Gift Card</a>
+            <a href="#">Myntra Insider</a>
+        </div>
+
+        <div class="footer_column">
+            <h3>ONLINE SHOPPING</h3>
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">Kids</a>
+            <a href="#">Beauty</a>
+            <a href="#">Gift Card</a>
+            <a href="#">Myntra Insider</a>
+        </div>
+    </div>
+    <hr>
+    <div class="copyright">
+        © 2023 www.myntra.com. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- JS فائلز -->
+  <script src="../scripts/common.js"></script> 
+  <script src="../data/items.js"></script>
+  <script src="../scripts/product.js"></script>
+
+
+
+  <script>
+    const langBtn = document.getElementById("langToggleBtn");
+
+    // پہلے سے Urdu mode رکھیں
+    document.body.classList.add("lang-ur");
+    langBtn.innerText = "ENGLISH";
+
+    langBtn.addEventListener("click", () => {
+        if (document.body.classList.contains("lang-ur")) {
+            // English Mode
+            document.body.classList.remove("lang-ur");
+            document.body.classList.add("lang-en");
+            langBtn.innerText = "URDU";
+        } else {
+            // Urdu Mode
+            document.body.classList.remove("lang-en");
+            document.body.classList.add("lang-ur");
+            langBtn.innerText = "ENGLISH";
+        }
+    });
+</script>
+
+
+</body>
+</html>
